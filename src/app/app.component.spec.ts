@@ -13,6 +13,6 @@ describe('AppComponent', () => {
   });
 
   it(`should have the 'reminders' title`, () => {
-    expect(component.title).toEqual('reminders');
+    expect(component.title).toEqual('error/test');
   });
 });

@@ -19,6 +19,7 @@ jobs:
       - name: "Run Build"
         run: npm run build
   unit-test:
+    needs: [build]
     runs-on: ubuntu-latest
     steps:
       - name: "Checkout Action"
