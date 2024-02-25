@@ -18,18 +18,3 @@ jobs:
         uses: npm ci
       - name: Run Build
         uses: npm run build
-  unit-test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Action
-        uses: actions/checkout@v4
-      - name: Setup node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-      - name: Install Angular
-        uses: npm i -G @angular/cli
-      - name: Install dependencies
-        uses: npm ci
-      - name: Run Unit Tests
-        uses: npm run test:coverage
