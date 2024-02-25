@@ -18,3 +18,16 @@ jobs:
         run: npm ci
       - name: "Run Build"
         run: npm run build
+  unit-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout Action"
+        uses: actions/checkout@v4
+      - name: "Setup node.js"
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: "Install dependencies"
+        run: npm ci
+      - name: "Run Unit Tests"
+        run: npm run test:coverage
