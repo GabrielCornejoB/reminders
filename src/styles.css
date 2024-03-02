@@ -1,3 +1,17 @@
+/** Global Vars */
+:root {
+  --base-100: #ffffff;
+  --base-200: #e7e2e6;
+  --base-300: #cec9cd;
+  --base-400: #d0c9cf;
+  --base-500: #dbd4d9;
+
+  --text-100: #272727;
+  --text-200: #4f4a4e;
+  --text-300: #727473;
+  --text-400: #90898f;
+}
+
 /** CSS Resets */
 * {
   margin: 0;
