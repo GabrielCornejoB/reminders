@@ -1,0 +1,14 @@
+.layout-aside {
+  height: 100vh;
+  width: 300px;
+  background-color: var(--base-200);
+  border: 2px solid var(--border);
+}
+
+.layout-main-article {
+  height: 100vh;
+  flex-grow: 1;
+  border-top: 2px solid var(--border);
+  border-right: 2px solid var(--border);
+  border-bottom: 2px solid var(--border);
+}
